@@ -1,3 +1,31 @@
 @import "_settings";
 @import "_fonts";
 @import "_vars";
+.first-example{
+   width: 300px; height: 300px;
+   border-radius: 10px;
+   position: relative;
+   background-color: greenyellow;
+   .first-example__div2{
+      border-radius: 10px;
+      position: absolute;
+      background-color: $DarkRed;
+      left: 50%; top: 50%;
+      transform: translate(-50%, -50%);
+      width: 200px; height: 200px;
+      .first-example__div3{
+         cursor: pointer;
+         border-radius: 10px;
+         position: absolute;
+         top: 50%; left: 50%;
+         transform: translate(-50%, -50%);
+         background-color: rgb(121, 121, 255);
+         width: 100px; height: 100px;
+         &:hover{
+            transition: all .3s ease;
+            background-color: $col-m-primary;
+            cursor: pointer;
+         }
+      }
+   }
+}
