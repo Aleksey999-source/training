@@ -19,6 +19,12 @@
           <span class="first-example__div3"></span>
         </p>
       </div>
+      <h2>Пример 3. Прекращение всплытия.</h2>
+      <div onclick="alert('зеленый');" class="first-example">
+        <div onclick="alert('красный'); event.stopPropagation();" class="first-example__div2">
+          <div onclick="alert('голубой');" class="first-example__div3"></div>
+        </div>
+      </div>
       <h1>Решение Задач</h1>
     </main>
     @@include('html/footer.html', {})

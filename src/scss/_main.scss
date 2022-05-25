@@ -1,7 +1,21 @@
 @import "_settings";
 @import "_fonts";
 @import "_vars";
+body{
+   width: 100%;
+}
+html{
+   width: 100%;
+}
+main{
+   width: 100%;
+}
+div:not(:last-child){
+   margin: 0px 0px 30px 0px;
+}
 .first-example{
+   display: block;
+   margin: 0 auto;
    width: 300px; height: 300px;
    border-radius: 10px;
    position: relative;
