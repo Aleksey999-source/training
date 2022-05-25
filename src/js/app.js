@@ -9,3 +9,8 @@
 //    this.innerHTML += '!';
 // }
 //-------------------------------------------------------------------------
+// let ul = document.querySelector('#ul2');
+// ul.addEventListener('click', (event) => {
+
+//    event.target.closest('li').innerHTML += '!';
+// });
