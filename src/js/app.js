@@ -46,3 +46,11 @@ function addLi()
    ul.appendChild(newLi);
 }
 // 2. Дана таблица с юзерами с двумя колонками: имя и фамилия. Под таблицей сделайте форму, с помощью которой можно будет добавить нового юзера в таблицу. Сделайте так, чтобы при клике на любую ячейку появлялся prompt, с помощью которого можно изменить текст ячейки. Задачу решите с помощью делегирования (то есть событие должно быть навешано на table).
+let table = document.querySelector('.table')
+table.addEventListener('click', addName);
+
+function addName(event){
+   let str;
+   if (event.target.tagName == 'TD') 
+   event.target.closest('td').innerHTML = prompt('Введите данные', str);
+}

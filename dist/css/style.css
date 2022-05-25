@@ -904,6 +904,26 @@ div:not(:last-child) {
   }
 }
 
+.table {
+  border-collapse: separate;
+  border-radius: 5px;
+  background: rgb(255, 207, 33);
+  text-align: center;
+  border-spacing: 5px;
+  padding: 5px;
+  border: 16px solid;
+  background-color: #fff;
+}
+.table tr {
+  padding: 5px;
+}
+.table tr th {
+  padding: 5px;
+}
+.table tr td {
+  padding: 10px 10px 10px 10px;
+}
+
 * li {
   list-style: none;
   padding: 0;
@@ -1067,7 +1087,7 @@ h4 {
 }
 
 body {
-  background-color: #ce2727;
+  background-color: #fe82eb;
 }
 body h1 {
   font-family: Pushster;

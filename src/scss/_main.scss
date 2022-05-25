@@ -58,3 +58,23 @@ div:not(:last-child){
    cursor: pointer;
    padding: 10px 20px 10px 20px;
 }
+//---------------------------------------ТАБЛИЦА-----------------------
+.table{
+      border-collapse: separate;
+      border-radius: 5px;
+      background: rgb(255, 207, 33);
+      text-align: center;
+      border-spacing: 5px;
+      padding: 5px;
+      border: 16px solid;
+   background-color: #fff;
+   tr{
+      padding: 5px;
+      th{
+         padding: 5px;
+      }
+      td{
+         padding: 10px 10px 10px 10px;
+      }
+   }
+}
