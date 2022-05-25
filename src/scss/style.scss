@@ -1,0 +1,48 @@
+@import "_reset";
+@import '_fonts';
+@import "_settings";
+@import "_popup";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ce2727;
+  h1 {
+    font-family: Pushster;
+    font-weight: 400;
+    color: green;
+    font-size: 60px;
+  }
+}
+
+.img {
+  width: 401px;
+  height: 400px;
+  object-fit: cover;
+}
+
+.block{
+  width: 100%;
+  min-height: 500px;
+  background-color: #2767ce;
+  color: aliceblue;
+  text-align: center;
+  padding: 20px 20px 20px 20px;
+  font-size: 22px;
+}
+.flex-blocks{
+  display: flex;
+  gap: 0px 10px;
+  .flex__item{
+    flex: 0 1 33.333%;
+    min-height: 200px;
+    padding: 10px 10px 10px 10px;
+    background-color: #198833;
+    color:aquamarine;
+    border: none;
+    border-radius: 21px;
+  }
+}
