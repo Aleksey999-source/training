@@ -43,3 +43,10 @@ div:not(:last-child){
       }
    }
 }
+.button{
+   @media (min-width: $md2) {
+      @include tplbutton (#fff, rgb(91, 225, 147));
+   }
+   cursor: pointer;
+   padding: 10px 20px 10px 20px;
+}

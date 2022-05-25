@@ -848,6 +848,34 @@ div:not(:last-child) {
   cursor: pointer;
 }
 
+.button {
+  cursor: pointer;
+  padding: 10px 20px 10px 20px;
+}
+@media (min-width: 992px) {
+  .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 53px;
+    color: #fff;
+    background-color: rgb(91, 225, 147);
+    font-weight: 600;
+    font-size: 16px;
+    border: none;
+    box-shadow: 5px 5px 0.7 black;
+    border-radius: 5px;
+    font-family: "Lato", sans-serif;
+  }
+}
+@media (min-width: 992px) and (min-width: 992px) {
+  .button:hover {
+    transition: ease 0.45s;
+    color: rgb(91, 225, 147);
+    background-color: #fff;
+  }
+}
+
 * li {
   list-style: none;
   padding: 0;
