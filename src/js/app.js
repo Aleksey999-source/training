@@ -1,7 +1,11 @@
-import * as flsFunctions from './modules/functions.js'
 
-flsFunctions.isWebp()
-
-import Swiper, { Navigation, Pagination } from 'swiper'
-
-const swiper = new Swiper()
+// let ul = document.querySelectorAll('#ul li');
+// for (let i = 0; i < ul.length; i++)
+// {
+//    ul[i].addEventListener('click', addSign);
+// }
+// function addSign()
+// {     
+//    this.innerHTML += '!';
+// }
+//-------------------------------------------------------------------------
