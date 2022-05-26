@@ -906,6 +906,34 @@ div:not(:last-child) {
   }
 }
 
+.form-button2 {
+  cursor: pointer;
+  padding: 10px 20px 10px 20px;
+}
+@media (min-width: 992px) {
+  .form-button2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 53px;
+    color: #fff;
+    background-color: rgb(208, 194, 0);
+    font-weight: 600;
+    font-size: 16px;
+    border: none;
+    box-shadow: 5px 5px 0.7 black;
+    border-radius: 5px;
+    font-family: "Lato", sans-serif;
+  }
+}
+@media (min-width: 992px) and (min-width: 992px) {
+  .form-button2:hover {
+    transition: ease 0.45s;
+    color: rgb(208, 194, 0);
+    background-color: #fff;
+  }
+}
+
 .button2 {
   cursor: pointer;
   padding: 10px 20px 10px 20px;

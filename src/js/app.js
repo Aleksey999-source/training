@@ -57,22 +57,40 @@
 // ------------------------------------------------Работа с формами--------------------------------------------------
 //  1. Дана форма с id="form". В ней даны инпуты, в них числа. Дана кнопка. По нажатию на эту кнопку получите форму по ее id, затем циклом переберите все инпуты в ней и найдите сумму чисел из этих инпутов.
 
-let button = document.querySelector('.form-button');
+// let button = document.querySelector('.form-button');
 
-button.addEventListener('click', sumIn)
+// button.addEventListener('click', sumIn)
 
-function sumIn()
+// function sumIn()
+// {
+//    let form = document.querySelector('#form');
+//    let sum = 0;
+//    for (let i = 0; i < form.elements.length; i++)
+//    {
+//       sum += Number(form.elements[i].value);
+//    }
+//    alert('Сумма чисел равна:' + sum);
+// }
+// console.log(form.elements[0].innerHTML);
+//  2. На странице расположено несколько форм. В них есть инпуты, в инпутах числа. Дана кнопка. По нажатию на эту кнопку циклом переберите все формы на странице, затем циклом переберите все инпуты в каждой форме и найдите сумму чисел из всех этих инпутов. 
+let button = document.querySelector('.form-button2');
+button.addEventListener('click', sumAllIn);
+
+function sumAllIn()
 {
-   let form = document.querySelector('#form');
    let sum = 0;
-   for (let i = 0; i < form.elements.length; i++)
-   {
-      sum += Number(form.elements[i].value);
+   let form = document.forms;
+   for (let i = 1; i < form.length; i++)
+   {  
+      console.log()
+      for (let k = 0; k < form[i].elements.length; k++)
+      {
+         sum += Number(form[i].elements[k].value);
+      }
    }
-   alert('Сумма чисел равна:' + sum);
+   console.log(alert('Сумма чисел всех инпутов - ' + sum));
 }
-console.log(form.elements[0].innerHTML);
-//  2. На странице расположено несколько форм. В них есть инпуты, в инпутах числа. Дана кнопка. По нажатию на эту кнопку циклом переберите все формы на странице, затем циклом переберите все инпуты в каждой форме и найдите сумму чисел из всех этих инпутов.
+
 
 // -------------------------------------------------Работа с селектами-------------------------------------------------
 //  1. Дан селект. Дан инпут. По изменению селекта выведите текст выбранного пункта в инпут.
