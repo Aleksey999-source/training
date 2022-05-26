@@ -19,6 +19,8 @@ div:not(:last-child){
    width: 300px; height: 300px;
    border-radius: 10px;
    position: relative;
+   left: 50%;
+   transform: translateX(-50%);
    background-color: greenyellow;
    .first-example__div2{
       border-radius: 10px;
@@ -50,6 +52,13 @@ div:not(:last-child){
    cursor: pointer;
    padding: 10px 20px 10px 20px;
 }
+.form-button{
+   @media (min-width: $md2) {
+      @include tplbutton (#fff, rgb(0, 168, 50));
+   }
+   cursor: pointer;
+   padding: 10px 20px 10px 20px;
+}
 
 .button2{
    @media (min-width: $md2) {
@@ -60,6 +69,8 @@ div:not(:last-child){
 }
 //---------------------------------------ТАБЛИЦА-----------------------
 .table{
+      width: 33%;
+      margin: 0 auto;
       border-collapse: separate;
       border-radius: 5px;
       background: rgb(255, 207, 33);
@@ -72,6 +83,7 @@ div:not(:last-child){
       padding: 5px;
       th{
          padding: 5px;
+         background: $col-T-light;
       }
       td{
          padding: 10px 10px 10px 10px;
