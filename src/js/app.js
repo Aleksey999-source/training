@@ -94,13 +94,21 @@
 
 // -------------------------------------------------Работа с селектами-------------------------------------------------
 //  1. Дан селект. Дан инпут. По изменению селекта выведите текст выбранного пункта в инпут.
-let select = document.querySelector('#select');
-let input = document.querySelector('.inp');
+let select = document.querySelector('#select2');
+let input = document.querySelector('.inp2');
+let button = document.querySelector('.select-button');
 
- select.addEventListener('change', function()
- {
-   input.value = this.options[this.selectedIndex].text;
- });
+button.addEventListener('click', selectOption);
+
+function selectOption()
+{
+   select.selectedIndex = Number(input.value) - 1;
+}
+
+//  select.addEventListener('change', function()
+//  {
+//    input.value = this.options[this.selectedIndex].text;
+//  });
 //  2. Дан селект. Дан инпут. Дана кнопка. Сделайте так, чтобы в инпут можно было ввести число, нажать на кнопку и в селекте становился выбранным пункт с этим номером.
 
 //  3. Дан селект со списком стран. Сделайте так, чтобы при выборе страны рядом появлялся еще и селект со списком городов из этой страны.
