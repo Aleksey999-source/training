@@ -73,28 +73,34 @@
 // }
 // console.log(form.elements[0].innerHTML);
 //  2. На странице расположено несколько форм. В них есть инпуты, в инпутах числа. Дана кнопка. По нажатию на эту кнопку циклом переберите все формы на странице, затем циклом переберите все инпуты в каждой форме и найдите сумму чисел из всех этих инпутов. 
-let button = document.querySelector('.form-button2');
-button.addEventListener('click', sumAllIn);
+// let button = document.querySelector('.form-button2');
+// button.addEventListener('click', sumAllIn);
 
-function sumAllIn()
-{
-   let sum = 0;
-   let form = document.forms;
-   for (let i = 1; i < form.length; i++)
-   {  
-      console.log()
-      for (let k = 0; k < form[i].elements.length; k++)
-      {
-         sum += Number(form[i].elements[k].value);
-      }
-   }
-   console.log(alert('Сумма чисел всех инпутов - ' + sum));
-}
+// function sumAllIn()
+// {
+//    let sum = 0;
+//    let form = document.forms;
+//    for (let i = 1; i < form.length; i++)
+//    {  
+//       console.log()
+//       for (let k = 0; k < form[i].elements.length; k++)
+//       {
+//          sum += Number(form[i].elements[k].value);
+//       }
+//    }
+//    console.log(alert('Сумма чисел всех инпутов - ' + sum));
+// }
 
 
 // -------------------------------------------------Работа с селектами-------------------------------------------------
 //  1. Дан селект. Дан инпут. По изменению селекта выведите текст выбранного пункта в инпут.
+let select = document.querySelector('#select');
+let input = document.querySelector('.inp');
 
+ select.addEventListener('change', function()
+ {
+   input.value = this.options[this.selectedIndex].text;
+ });
 //  2. Дан селект. Дан инпут. Дана кнопка. Сделайте так, чтобы в инпут можно было ввести число, нажать на кнопку и в селекте становился выбранным пункт с этим номером.
 
 //  3. Дан селект со списком стран. Сделайте так, чтобы при выборе страны рядом появлялся еще и селект со списком городов из этой страны.
@@ -127,3 +133,5 @@ function sumAllIn()
 // console.log(counter());
 // console.log(counter());
 
+// console.log(x);
+// var x = 10;
